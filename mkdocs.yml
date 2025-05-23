@@ -1,0 +1,10 @@
+site_name: "Documentação Order Service"
+theme:
+  name: material
+
+nav:
+  - Introdução: index.md
+  - Arquitetura: arquitetura.md
+  - Entidades: entidades.md
+  - Fluxo de Processamento: fluxo.md
+  - Setup e Execução: setup.md
