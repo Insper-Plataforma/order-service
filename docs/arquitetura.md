@@ -1,6 +1,6 @@
 # Arquitetura
 
-## Estrutura de pastas
+## Estrutura de Pastas
 
 ```bash
 src/main/java/store/order/
@@ -14,6 +14,9 @@ src/main/java/store/order/
 ├── OrderParser.java # Conversão DTO ↔ Domínio
 ├── OrderResource.java # Controlador REST
 ├── OrderApplication.java # Classe principal
+└── resources/
+│ ├── application.yaml # Configurações de ambiente
+│ └── db/migration/ # Scripts Flyway
 ```
 
 ---
@@ -24,10 +27,3 @@ src/main/java/store/order/
 - `AccountOut` → representa o dono do pedido (id vem via header)
 
 ---
-
-## Banco de Dados
-
-- Tabela `orders`
-- Tabela `order_item`
-
-Usa **Spring Data JPA** e **Flyway** para versionamento.
