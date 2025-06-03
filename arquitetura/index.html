@@ -268,7 +268,7 @@
         <li class="md-nav__item">
   <a href="#estrutura-de-pastas" class="md-nav__link">
     <span class="md-ellipsis">
-      Estrutura de pastas
+      Estrutura de Pastas
     </span>
   </a>
   
@@ -278,15 +278,6 @@
   <a href="#integracoes" class="md-nav__link">
     <span class="md-ellipsis">
       Integrações
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#banco-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Banco de Dados
     </span>
   </a>
   
@@ -395,7 +386,7 @@
         <li class="md-nav__item">
   <a href="#estrutura-de-pastas" class="md-nav__link">
     <span class="md-ellipsis">
-      Estrutura de pastas
+      Estrutura de Pastas
     </span>
   </a>
   
@@ -405,15 +396,6 @@
   <a href="#integracoes" class="md-nav__link">
     <span class="md-ellipsis">
       Integrações
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#banco-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Banco de Dados
     </span>
   </a>
   
@@ -436,7 +418,7 @@
 
 
 <h1 id="arquitetura">Arquitetura</h1>
-<h2 id="estrutura-de-pastas">Estrutura de pastas</h2>
+<h2 id="estrutura-de-pastas">Estrutura de Pastas</h2>
 <pre><code class="language-bash">src/main/java/store/order/
 ├── Order.java # Entidade de domínio
 ├── OrderModel.java # Entidade JPA
@@ -448,6 +430,9 @@
 ├── OrderParser.java # Conversão DTO ↔ Domínio
 ├── OrderResource.java # Controlador REST
 ├── OrderApplication.java # Classe principal
+└── resources/
+│ ├── application.yaml # Configurações de ambiente
+│ └── db/migration/ # Scripts Flyway
 </code></pre>
 <hr />
 <h2 id="integracoes">Integrações</h2>
@@ -456,12 +441,6 @@
 <li><code>AccountOut</code> → representa o dono do pedido (id vem via header)</li>
 </ul>
 <hr />
-<h2 id="banco-de-dados">Banco de Dados</h2>
-<ul>
-<li>Tabela <code>orders</code></li>
-<li>Tabela <code>order_item</code></li>
-</ul>
-<p>Usa <strong>Spring Data JPA</strong> e <strong>Flyway</strong> para versionamento.</p>
 
 
 
